@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<input id="abc" placeholder="ENter a Number: " type="number"/><br />
+
+<button type="button" onclick="fun()"> Click Here</button>
+<script> 
+//var names=["ALI","USAMA","RASHID","HAMZA"];
+//pop-> it is used to remove the last element of array
+//x=names.pop(); //Hamza
+//push()->  it is used to add a new element ath the nd of array
+//names.push("Umar");
+//a=names.push("Umar");
+//document.write("POP: "+x+"&nbsp;Push: "+a);
+//Shifting Elements in Array
+/*
+  shift()-> it removes the first element of array and shift all other elements to a lower index.
+  unshift()-> add element at the start of array
+  
+  changing Elements in Array
+  [] indexing
+
+//names.shift();
+// names.unshift("AKBAR");	
+ names[1]="Hafiz sb";
+document.write(names);
+*/
+
+/*
+ conditional Statements 
+ -> if else
+    -> if  (when condition stands true at the starting )
+	-> else (it is a second choice)
+	-> else if ( when we have many condition)
+	 -> switch
+*/
+function fun(){
+	
+	var a =parseInt(document.getElementById("abc").value);
+	if(a>0 && a<=20){
+		alert("a is smaller than 20");
+		}
+		else if(a> 20 && a<40){
+			alert("a is greater than 20");
+			}
+			else if(a >40){
+				alert("a is larger number");
+				}
+				else{
+					alert("a is less than 0");
+					}
+	//&& both condition should be true condition a && b
+	//|| 
+	
+	}
+	/*
+var a =11;
+if(a%2==0){
+	alert(a+ "is divisible by 2");
+	}
+else{
+	 alert(a+"is not divisible of 2");
+	}	
+*/
+</script>
+</body>
+</html>
